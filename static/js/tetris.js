@@ -219,4 +219,4 @@
   });
 
   document.getElementById('startBtn').addEventListener('click', () => startGame());
-  document.getElementById('pauseBtn').addEventListener('click', () => togglePa
+  document.getElementById('pauseBtn').addEventListener('click', () => togglePause());
