@@ -1,0 +1,22 @@
+:root{
+  --bg:#0f1720; /* deep blue/gray */
+  --panel:#0b1220;
+  --accent: linear-gradient(135deg,#ff7a18,#af002d);
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef6;background:var(--bg)}
+#app{max-width:980px;margin:30px auto;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));box-shadow:0 8px 30px rgba(2,6,23,0.7)}
+header{display:flex;align-items:center;justify-content:center;padding:8px 0}
+header h1{letter-spacing:6px;margin:0;color:#ffd36b}
+main{display:flex;gap:20px;align-items:flex-start;padding:12px}
+canvas#game{background:linear-gradient(180deg,#07101a,#081423);border-radius:8px;box-shadow:inset 0 0 18px rgba(0,0,0,0.6);image-rendering:pixelated}
+#hud{display:flex;flex-direction:column;gap:12px}
+.panel{background:var(--panel);padding:10px;border-radius:8px;min-width:120px;color:#cfe7ff}
+.panel h2{margin:0 0 6px 0;font-size:14px;color:#9ad0ff}
+#score{font-size:22px;font-weight:700}
+#next{background:linear-gradient(180deg,#09131b,#07101a);border-radius:6px}
+.buttons{display:flex;gap:8px}
+button{padding:8px 10px;border-radius:8px;border:0;background:#19324a;color:#dff3ff;cursor:pointer}
+button:hover{transform:translateY(-1px)}
+footer{text-align:center;padding:8px 0;color:#9fb8d6}

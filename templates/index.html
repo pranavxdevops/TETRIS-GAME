@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tetris — Flask</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>TETRIS</h1>
+    </header>
+
+    <main>
+      <canvas id="game" width="320" height="640"></canvas>
+
+      <aside id="hud">
+        <div class="panel">
+          <h2>Score</h2>
+          <div id="score">0</div>
+        </div>
+        <div class="panel">
+          <h2>Level</h2>
+          <div id="level">1</div>
+        </div>
+        <div class="panel">
+          <h2>Next</h2>
+          <canvas id="next" width="120" height="120"></canvas>
+        </div>
+        <div class="panel buttons">
+          <button id="startBtn">Start</button>
+          <button id="pauseBtn">Pause</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <small>Controls: ← → move • ↑ rotate • ↓ soft drop • Space hard drop • P pause</small>
+    </footer>
+  </div>
+
+  <script src="/static/js/tetris.js"></script>
+</body>
+</html>
